@@ -1,0 +1,2162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="Admin-Style.css" />
+    <link rel="stylesheet" href="responsive-768.css" />
+    <link rel="stylesheet" href="responsive-480.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.15/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.15/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@6.1.15/index.global.min.js"></script>
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="slidebar">
+        <div class="logo">
+          <img src="image/greendash-logo.png" alt="" />
+        </div>
+        <div class="menu">
+          <!-- MENU1 -->
+          <div class="menu1">
+            <div id="i1"><i class="fa-solid fa-table-columns"></i></div>
+            <div id="p1"><p>Dashboard</p></div>
+            <div id="i2"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m1">
+            <div><a href="#" id="weedo">Weedo</a></div>
+            <div><a href="#">Web Analytics</a></div>
+            <div><a href="#">Social Media</a></div>
+          </div>
+
+          <!-- MENU2 -->
+          <div class="menu2">
+            <div id="i3"><i class="fa-regular fa-folder-open"></i></div>
+            <div id="p2"><p>Order</p></div>
+            <div id="i4"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m2">
+            <div id="ord"><a href="#">Order Status </a></div>
+          </div>
+
+          <!-- MENU3 -->
+          <div class="menu3">
+            <div id="i5"><i class="fa-brands fa-product-hunt"></i></div>
+            <div id="p3"><p>Product</p></div>
+            <div id="i6"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m3">
+            <div id="prd"><a href="#">Products-List</a></div>
+            <div><a href="#">Products-Grid</a></div>
+            <div><a href="#">Cencle-Products</a></div>
+            <div><a href="#">Return-Products</a></div>
+          </div>
+
+          <!-- MENU4 -->
+          <div class="menu4">
+            <div id="i7">
+              <i class="fa-solid fa-person-military-pointing"></i>
+            </div>
+            <div id="p4"><p>Customers</p></div>
+            <div id="i8"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m4">
+            <div id="cus"><a href="#">Customers-List</a></div>
+            <div><a href="#">Reviews</a></div>
+          </div>
+
+          <!-- MENU5 -->
+          <div class="menu5">
+            <div id="i9"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+            <div id="p5"><p>Invoice</p></div>
+            <div id="i10"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m5">
+            <div><a href="#">Invoice</a></div>
+            <div><a href="#">Invoice-List</a></div>
+          </div>
+
+          <!-- MENU6 -->
+          <div class="menu6">
+            <div id="i11"><i class="fa-solid fa-building"></i></div>
+            <div id="p6"><p>Basic UI Elements</p></div>
+            <div id="i12"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m6">
+            <div><a href="#">Acordians</a></div>
+            <div><a href="#">Alerts</a></div>
+            <div><a href="#">Buttons</a></div>
+            <div><a href="#">Breadcrumbs</a></div>
+            <div><a href="#">Badges</a></div>
+            <div><a href="#">Cards</a></div>
+            <div><a href="#">Progress Bars</a></div>
+            <div><a href="#">Pre-Loders</a></div>
+            <div><a href="#">Pagination</a></div>
+            <div><a href="#">Tabs</a></div>
+            <div><a href="#">Typography</a></div>
+          </div>
+
+          <!-- MENU7 -->
+          <div class="menu7">
+            <div id="i13"><i class="fa-solid fa-code"></i></div>
+            <div id="p7"><p>Advanced UI Elements</p></div>
+            <div id="i14"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m7">
+            <div><a href="#">Draggables</a></div>
+            <div><a href="#">Sliders</a></div>
+            <div><a href="#">Modals</a></div>
+            <div><a href="#">Ratings</a></div>
+            <div><a href="#">Tour</a></div>
+            <div><a href="#">Cropper</a></div>
+            <div><a href="#">Range Slider</a></div>
+          </div>
+          <!-- MENU8 -->
+          <div class="menu8">
+            <div id="i15"><i class="fa-solid fa-table"></i></div>
+            <div id="p8"><p>Form Elements</p></div>
+            <div id="i16"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m8">
+            <div><a href="#">Form Elements</a></div>
+            <div><a href="#">Form Validation</a></div>
+            <div><a href="#">Form Layout</a></div>
+            <div><a href="#">Form Wizard</a></div>
+          </div>
+
+          <!-- MENU9 -->
+          <div class="menu9">
+            <div id="i17"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+            <div id="p9"><p>Charts</p></div>
+            <div id="i18"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m9">
+            <div><a href="#">Chart JS</a></div>
+            <div><a href="#">Google Chart</a></div>
+          </div>
+
+          <!-- MENU10 -->
+          <div class="menu10">
+            <div id="i19"><i class="fa-regular fa-calendar-days"></i></div>
+            <div id="p10"><p>Table</p></div>
+            <div id="i20"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m10">
+            <div id="cel"><a href="#">Celendar Tables</a></div>
+            <div><a href="#">Data Tables</a></div>
+          </div>
+
+          <!-- MENU11 -->
+          <div class="menu11">
+            <div id="i21"><i class="fa-solid fa-message"></i></div>
+            <div id="p11"><p>Popups</p></div>
+            <div id="i22"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m11">
+            <div><a href="#">Sweet Alerts</a></div>
+            <div><a href="#">Toast</a></div>
+          </div>
+          <!-- MENU12 -->
+          <div class="menu12">
+            <div id="i23"><i class="fa-solid fa-pen-to-square"></i></div>
+            <div id="p12"><p>Icons</p></div>
+            <div id="i24"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m12">
+            <div><a href="#">Fontawesome</a></div>
+            <div><a href="#">Flaticons</a></div>
+            <div><a href="#">Materialize</a></div>
+          </div>
+
+          <!-- MENU13 -->
+          <div class="menu13">
+            <div id="i25"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div id="p13"><p>Maps</p></div>
+            <div id="i26"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m13">
+            <div id="mp"><a href="#">Google Maps</a></div>
+            <div><a href="#">Vactor Maps</a></div>
+          </div>
+
+          <!-- MENU14 -->
+          <div class="menu14">
+            <div id="i27"><i class="fa-solid fa-file"></i></div>
+            <div id="p14"><p>Pages</p></div>
+            <div id="i28"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m14">
+            <div><a href="#">Default Login</a></div>
+            <div><a href="#">Modal Login</a></div>
+            <div><a href="#">Lock Screen</a></div>
+            <div><a href="#">Coming Soon</a></div>
+            <div><a href="#">Error Page</a></div>
+            <div><a href="#">FAQ</a></div>
+            <div><a href="#">Portfolio</a></div>
+            <div><a href="#">User Profile</a></div>
+            <div><a href="#">Invoice</a></div>
+          </div>
+
+          <!-- MENU15 -->
+          <div class="menu15">
+            <div id="i29"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <div id="p15"><p>Apps</p></div>
+            <div id="i30"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m15">
+            <div><a href="#">Chat</a></div>
+            <div><a href="#">Email</a></div>
+            <div><a href="#">To-do List</a></div>
+          </div>
+
+          <!-- MENU16 -->
+          <div class="menu16">
+            <div id="i31"><i class="fa-solid fa-file"></i></div>
+            <div id="p16"><p>Additional</p></div>
+            <div id="i32"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <div class="sub-m16">
+            <div><a href="#">Add Product</a></div>
+            <div><a href="#">Pricing</a></div>
+            <div><a href="#">Shipment</a></div>
+            <div><a href="#">Widgets</a></div>
+            <div><a href="#">Animations</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NAVIGATION -->
+
+      <nav>
+        <div class="sub-n1"></div>
+        <div class="sub-n3" id="clock"></div>
+        <div class="sub-n2">
+          <div id="ic">
+            <input type="search" name="" id="" placeholder="Search Here..." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div id="ic1">
+            <i class="fa-regular fa-envelope"></i>
+            <p></p>
+          </div>
+
+          <!-- Sub-Mail  -->
+          <div class="mail">
+            <div id="txt-m1">
+              Mail
+              <div>3 New</div>
+            </div>
+            <div id="txt-m2">
+              <img src="image/rakhan-potik-1.jpg" alt="" />
+              <p>Hey man, looking forward to your new project.</p>
+              <div><i class="fa-regular fa-clock"></i> 30 seconds ago</div>
+            </div>
+            <div id="txt-m2">
+              <img src="image/rakhan-potik-2.jpg" alt="" />
+              <p>
+                Dear John, I was told you bought Weedo! Send me your feedback.
+              </p>
+              <div><i class="fa-regular fa-clock"></i> 30 seconds ago</div>
+            </div>
+            <div id="txt-m2">
+              <img src="image/rakhan-potik-3.jpg" alt="" />
+              <p>How many people are we inviting to the dashboard?</p>
+              <div><i class="fa-regular fa-clock"></i> 30 seconds ago</div>
+            </div>
+
+            <div id="txt-m3">
+              <a href="#">Go to inbox</a>
+            </div>
+          </div>
+
+          <div id="ic2">
+            <i class="fa-regular fa-bell"></i>
+            <p></p>
+          </div>
+
+          <!-- Bell-Icon  -->
+          <div class="bell">
+            <div id="txt-b1">
+              Notifications
+              <div>4 New</div>
+            </div>
+            <div id="txt-b2">
+              <p>12 ways to improve your crypto dashboard</p>
+              <div><i class="fa-regular fa-clock"></i> 30 seconds ago</div>
+            </div>
+            <div id="txt-b2">
+              <p>You have newly registered users</p>
+              <div><i class="fa-regular fa-clock"></i> 45 minutes ago</div>
+            </div>
+            <div id="txt-b2">
+              <p>Your account was logged in from an unauthorized IP</p>
+              <div><i class="fa-regular fa-clock"></i> 2 hours ago</div>
+            </div>
+            <div id="txt-b2">
+              <p>An application form has been submitted</p>
+              <div><i class="fa-regular fa-clock"></i> 1 day ago</div>
+            </div>
+
+            <div id="txt-b3">
+              <a href="#">View all Notifications</a>
+            </div>
+          </div>
+
+          <div id="ic3">
+            <div id="t"><h6></h6></div>
+            <div id="t1"><p></p></div>
+          </div>
+
+          <!-- SUB-SLIDE  -->
+          <div class="sub-slide">
+            <div class="slide1">
+              <div id="txt-ss1">
+                <i class="fa-regular fa-comments"></i>
+                <a href="#">Chat</a>
+              </div>
+              <div id="txt-ss1">
+                <i class="fa-solid fa-envelope-circle-check"></i>
+                <a href="#">Email</a>
+              </div>
+              <div id="txt-ss1">
+                <i class="fa-solid fa-clipboard-list"></i>
+                <a href="#">To-do</a>
+              </div>
+              <div id="txt-ss1">
+                <i class="fa-solid fa-bell"></i>
+                <a href="#">Reminder</a>
+              </div>
+              <div id="txt-ss1">
+                <i class="fa-solid fa-pencil"></i>
+                <a href="#">Note</a>
+              </div>
+              <div id="txt-ss1">
+                <i class="fa-solid fa-share-nodes"></i>
+                <a href="#">Invite</a>
+              </div>
+            </div>
+            <div id="txt-ss2">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <a href="#">Configure</a>
+            </div>
+          </div>
+          <div id="ic4">
+            <img src="image/rakhan-potik-1.jpg" alt="" />
+          </div>
+
+          <!-- Picture  -->
+
+          <div class="picture">
+            <div id="txt-p1">Welcome, Anny Frisha</div>
+            <div class="txt-pic">
+              <div id="txt-p2">
+                <i class="fa-regular fa-user"></i>
+                <a href="#"> Profile</a>
+              </div>
+              <div id="txt-p2">
+                <i class="fa-regular fa-envelope-open"></i>
+                <a href="#"> Inbox</a>
+              </div>
+              <div id="txt-p2">
+                <i class="fa-solid fa-gear"></i>
+                <a href="#"> Account Settings</a>
+              </div>
+            </div>
+            <div class="txt-pic1">
+              <div id="txt-p3">
+                <i class="fa-solid fa-lock"></i>
+                <a href="#"> Lock</a>
+              </div>
+              <div id="txt-p3">
+                <i class="fa-solid fa-power-off"></i>
+                <a href="#">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- CONTENT  -->
+
+      <div class="cont">
+        <div class="dashboad">
+          <div class="weedo">
+            <div id="w1">
+              <div class="wd-1">
+                <h4>TOTAL ORDERS</h4>
+                <div><i class="fa-solid fa-arrow-up"></i> 4567</div>
+                <p>48% From Last 24 Hours</p>
+              </div>
+              <div class="wd-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="80px"
+                  viewBox="0 -960 960 960"
+                  width="80px"
+                >
+                  <path
+                    d="M200-80q-33 0-56.5-23.5T120-160v-451q-18-11-29-28.5T80-680v-120q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v120q0 23-11 40.5T840-611v451q0 33-23.5 56.5T760-80H200Zm0-520v440h560v-440H200Zm-40-80h640v-120H160v120Zm200 280h240v-80H360v80Zm120 20Z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div id="w2">
+              <div class="wd-3">
+                <h4>COMPELETED ORDERS</h4>
+                <div><i class="fa-solid fa-dollar-sign"></i>80,950</div>
+                <p>2% Decreased From Last Day</p>
+              </div>
+              <div class="wd-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="80px"
+                  viewBox="0 -960 960 960"
+                  width="80px"
+                >
+                  <path
+                    d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div id="w3">
+              <div class="wd-1">
+                <h4>PENDING ORDERS</h4>
+                <div><i class="fa-solid fa-arrow-up"></i> 4567</div>
+                <p>48% From Last 24 Hours</p>
+              </div>
+              <div class="wd-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="80px"
+                  viewBox="0 -960 960 960"
+                  width="80px"
+                >
+                  <path
+                    d="M314-115q-104-48-169-145T80-479q0-26 2.5-51t8.5-49l-46 27-40-69 191-110 110 190-70 40-54-94q-11 27-16.5 56t-5.5 60q0 97 53 176.5T354-185l-40 70Zm306-485v-80h109q-46-57-111-88.5T480-800q-55 0-104 17t-90 48l-40-70q50-35 109-55t125-20q79 0 151 29.5T760-765v-55h80v220H620ZM594 0 403-110l110-190 69 40-57 98q118-17 196.5-107T800-480q0-11-.5-20.5T797-520h81q1 10 1.5 19.5t.5 20.5q0 135-80.5 241.5T590-95l44 26-40 69Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="weedo-1">
+            <div class="sub-weedo1">
+              <div id="sw">
+                <h2>ORDERS GRAPH</h2>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="45px"
+                    viewBox="0 -960 960 960"
+                    width="45px"
+                  >
+                    <path
+                      d="M160-160v-320h160v320H160Zm240 0v-640h160v640H400Zm240 0v-440h160v440H640Z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="45px"
+                    viewBox="0 -960 960 960"
+                    width="45px"
+                  >
+                    <path
+                      d="M120-120v-80l80-80v160h-80Zm160 0v-240l80-80v320h-80Zm160 0v-320l80 81v239h-80Zm160 0v-239l80-80v319h-80Zm160 0v-400l80-80v480h-80ZM120-327v-113l280-280 160 160 280-280v113L560-447 400-607 120-327Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div id="sw1"></div>
+            </div>
+
+            <div class="sub-weedo2">
+              <div class="upsw">
+                <div id="sw2">
+                  <h2>CURRENT SELES</h2>
+                  <p>Manage your current sale and buy orders</p>
+                </div>
+                <div id="sw3">
+                  <a href="#">Buy Orders</a>
+                  <div><a href="#">Sell Orders</a></div>
+                </div>
+              </div>
+
+              <div class="table">
+                <div>Price($)</div>
+                <div>Amount</div>
+                <div>Track ID</div>
+                <div>Date</div>
+              </div>
+              <div class="table1">
+                <div>$7860.24</div>
+                <div><i class="fa-solid fa-dollar-sign"></i> 0.528</div>
+                <div>#TR34351</div>
+                <div>12.01.2020</div>
+              </div>
+              <div class="table2">
+                <div>$5813.44</div>
+                <div><i class="fa-solid fa-sterling-sign"></i> 0.345</div>
+                <div>#TR34351</div>
+                <div>12.01.2020</div>
+              </div>
+              <div class="table3">
+                <div>$1264.99</div>
+                <div><i class="fa-solid fa-dollar-sign"></i> 0.117</div>
+                <div>#TR34351</div>
+                <div>12.01.2020</div>
+              </div>
+              <div class="table4">
+                <div>$3789.31</div>
+                <div><i class="fa-solid fa-euro-sign"></i> 0.217</div>
+                <div>#TR34351</div>
+                <div>12.01.2020</div>
+              </div>
+              <div class="table5">
+                <div>$7860.24</div>
+                <div><i class="fa-solid fa-dollar-sign"></i> 0.528</div>
+                <div>#TR34351</div>
+                <div>12.01.2020</div>
+              </div>
+              <div class="table6">
+                <div>$7860.24</div>
+                <div><i class="fa-solid fa-dollar-sign"></i> 0.528</div>
+                <div>#TR34351</div>
+                <div>12.01.2020</div>
+              </div>
+              <div class="table7">
+                <div>$7860.24</div>
+                <div><i class="fa-solid fa-dollar-sign"></i> 0.528</div>
+                <div>#TR34351</div>
+                <div>12.01.2020</div>
+              </div>
+              <div class="table8">
+                <div>$5813.44</div>
+                <div><i class="fa-solid fa-sterling-sign"></i> 0.345</div>
+                <div>#TR34351</div>
+                <div>12.01.2020</div>
+              </div>
+              <div class="table9">
+                <div>$5813.44</div>
+                <div><i class="fa-solid fa-euro-sign"></i> 0.217</div>
+                <div>#TR34351</div>
+                <div>12.01.2020</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ORDER  -->
+        <div class="order">
+          <div class="os-1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a> / Order / Order Status
+          </div>
+
+          <div class="os-2">
+            <div class="data1">
+              <div id="osd1">
+                <h2>ORDERS BY COUNTRY</h2>
+                <p>Your orders base based on country</p>
+              </div>
+              <div id="osd2">
+                <div class="od-tab">
+                  <div>Country</div>
+                  <div>User</div>
+                  <div>Percentage</div>
+                  <div>Exits</div>
+                </div>
+                <div class="od-tab1">
+                  <div>
+                    <img src="image/usa.png" alt="" />
+                    <p>USA</p>
+                  </div>
+                  <div>725</div>
+                  <div>17.25%</div>
+                  <div>234</div>
+                </div>
+                <div class="od-tab2">
+                  <div>
+                    <img src="image/india.png" alt="" />
+                    <p>INDIA</p>
+                  </div>
+                  <div>890</div>
+                  <div>12.90%</div>
+                  <div>425</div>
+                </div>
+                <div class="od-tab3">
+                  <div>
+                    <img src="image/rusia.png" alt="" />
+                    <p>RUSIA</p>
+                  </div>
+                  <div>729</div>
+                  <div>20.75%</div>
+                  <div>598</div>
+                </div>
+                <div class="od-tab4">
+                  <div>
+                    <img src="image/canada.png" alt="" />
+                    <p>CANADA</p>
+                  </div>
+                  <div>316</div>
+                  <div>30.09%</div>
+                  <div>119</div>
+                </div>
+              </div>
+            </div>
+            <div class="data2">
+              <div id="osd1">
+                <h2>ACTIVE ORDERS</h2>
+                <p>Real time Orders information and rating data</p>
+              </div>
+              <div id="osd3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT  -->
+
+        <div class="product">
+          <div class="os-1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a> / Product / Product List
+          </div>
+          <div class="pdl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="30px"
+              viewBox="0 -960 960 960"
+              width="30px"
+            >
+              <path
+                d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"
+              />
+            </svg>
+            <p><span>Well done!</span> You successfully Deleted the Product.</p>
+          </div>
+
+          <div class="pdl-1">
+            <div id="sub-pdl">
+              <div id="pl-1">
+                <h2>ORDER GRAPH</h2>
+                <p>Track Order Purchage</p>
+              </div>
+              <div id="pl-2"></div>
+            </div>
+
+            <div id="sub-pdl2">
+              <div id="pl-3">
+                <h2>PRODUCT REPORT</h2>
+                <p>Cannabis Orders information and rating data</p>
+              </div>
+              <div id="pl-4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAPS -->
+        <div class="map">
+          <div class="os-1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a> / Maps / Google Maps
+          </div>
+
+          <div class="map-data">
+            <div id="map-1">
+              <div id="md1">BASIC MAP</div>
+              <div id="md2"></div>
+            </div>
+            <div id="map-2">
+              <div id="md1">UNIQE MAP</div>
+              <div id="md3"></div>
+            </div>
+          </div>
+          <div id="map-3">
+            <div id="md4">GOOGLE MAP</div>
+            <div id="md5">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.759832515804!2d72.92017027602711!3d22.55066773377245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa590cb23c3494531%3A0xbae5caca8e2dc986!2sRed%20%26%20White%20Multimedia%20Education%20-%20Vidyanagar!5e0!3m2!1sen!2sin!4v1721104443279!5m2!1sen!2sin"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- TABLE   -->
+
+        <div class="celendar">
+          <div class="os-1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a> / Table / Celendar Table
+          </div>
+
+          <div id="cele-1"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var options = {
+        series: [
+          {
+            name: "north",
+            data: [
+              {
+                x: 1996,
+                y: 322,
+              },
+              {
+                x: 1997,
+                y: 324,
+              },
+              {
+                x: 1998,
+                y: 329,
+              },
+              {
+                x: 1999,
+                y: 342,
+              },
+              {
+                x: 2000,
+                y: 348,
+              },
+              {
+                x: 2001,
+                y: 334,
+              },
+              {
+                x: 2002,
+                y: 325,
+              },
+              {
+                x: 2003,
+                y: 316,
+              },
+              {
+                x: 2004,
+                y: 318,
+              },
+              {
+                x: 2005,
+                y: 330,
+              },
+              {
+                x: 2006,
+                y: 355,
+              },
+              {
+                x: 2007,
+                y: 366,
+              },
+              {
+                x: 2008,
+                y: 337,
+              },
+              {
+                x: 2009,
+                y: 352,
+              },
+              {
+                x: 2010,
+                y: 377,
+              },
+              {
+                x: 2011,
+                y: 383,
+              },
+              {
+                x: 2012,
+                y: 344,
+              },
+              {
+                x: 2013,
+                y: 366,
+              },
+              {
+                x: 2014,
+                y: 389,
+              },
+              {
+                x: 2015,
+                y: 334,
+              },
+            ],
+          },
+          {
+            name: "south",
+            data: [
+              {
+                x: 1996,
+                y: 162,
+              },
+              {
+                x: 1997,
+                y: 90,
+              },
+              {
+                x: 1998,
+                y: 50,
+              },
+              {
+                x: 1999,
+                y: 77,
+              },
+              {
+                x: 2000,
+                y: 35,
+              },
+              {
+                x: 2001,
+                y: -45,
+              },
+              {
+                x: 2002,
+                y: -88,
+              },
+              {
+                x: 2003,
+                y: -120,
+              },
+              {
+                x: 2004,
+                y: -156,
+              },
+              {
+                x: 2005,
+                y: -123,
+              },
+              {
+                x: 2006,
+                y: -88,
+              },
+              {
+                x: 2007,
+                y: -66,
+              },
+              {
+                x: 2008,
+                y: -45,
+              },
+              {
+                x: 2009,
+                y: -29,
+              },
+              {
+                x: 2010,
+                y: -45,
+              },
+              {
+                x: 2011,
+                y: -88,
+              },
+              {
+                x: 2012,
+                y: -132,
+              },
+              {
+                x: 2013,
+                y: -146,
+              },
+              {
+                x: 2014,
+                y: -169,
+              },
+              {
+                x: 2015,
+                y: -184,
+              },
+            ],
+          },
+        ],
+        chart: {
+          type: "area",
+          height: 350,
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: {
+          curve: "straight",
+        },
+
+        title: {
+          text: "ORDER",
+          align: "left",
+          style: {
+            fontSize: "14px",
+          },
+        },
+        xaxis: {
+          type: "datetime",
+          axisBorder: {
+            show: false,
+          },
+          axisTicks: {
+            show: false,
+          },
+        },
+        yaxis: {
+          tickAmount: 4,
+          floating: false,
+
+          labels: {
+            style: {
+              colors: "#8e8da4",
+            },
+            offsetY: -7,
+            offsetX: 0,
+          },
+          axisBorder: {
+            show: false,
+          },
+          axisTicks: {
+            show: false,
+          },
+        },
+        fill: {
+          opacity: 0.5,
+        },
+        tooltip: {
+          x: {
+            format: "yyyy",
+          },
+          fixed: {
+            enabled: false,
+            position: "topRight",
+          },
+        },
+        grid: {
+          yaxis: {
+            lines: {
+              offsetX: -30,
+            },
+          },
+          padding: {
+            left: 20,
+          },
+        },
+      };
+
+      var chart = new ApexCharts(document.querySelector("#pl-2"), options);
+      chart.render();
+    </script>
+    <script>
+      var options = {
+        series: [75],
+        chart: {
+          height: 350,
+          type: "radialBar",
+          offsetY: -10,
+        },
+        plotOptions: {
+          radialBar: {
+            startAngle: -135,
+            endAngle: 135,
+            dataLabels: {
+              name: {
+                fontSize: "16px",
+                color: undefined,
+                offsetY: 120,
+              },
+              value: {
+                offsetY: 76,
+                fontSize: "22px",
+                color: undefined,
+                formatter: function (val) {
+                  return val + "%";
+                },
+              },
+            },
+          },
+        },
+        fill: {
+          type: "gradient",
+          gradient: {
+            shade: "dark",
+            shadeIntensity: 0.15,
+            inverseColors: false,
+            opacityFrom: 1,
+            opacityTo: 1,
+            stops: [0, 50, 65, 91],
+          },
+        },
+        stroke: {
+          dashArray: 4,
+        },
+        labels: ["Median Ratio"],
+      };
+
+      var chart = new ApexCharts(document.querySelector("#pl-4"), options);
+      chart.render();
+    </script>
+
+    <script>
+      am5.ready(function () {
+        // Create root element
+        // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+        var root = am5.Root.new("md2");
+
+        // Set themes
+        // https://www.amcharts.com/docs/v5/concepts/themes/
+        root.setThemes([am5themes_Animated.new(root)]);
+
+        // Create the map chart
+        // https://www.amcharts.com/docs/v5/charts/map-chart/
+        var chart = root.container.children.push(
+          am5map.MapChart.new(root, {
+            panX: "rotateX",
+            panY: "translateY",
+            projection: am5map.geoMercator(),
+          })
+        );
+
+        var zoomControl = chart.set(
+          "zoomControl",
+          am5map.ZoomControl.new(root, {})
+        );
+        zoomControl.homeButton.set("visible", true);
+
+        // Create main polygon series for countries
+        // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/
+        var polygonSeries = chart.series.push(
+          am5map.MapPolygonSeries.new(root, {
+            geoJSON: am5geodata_worldLow,
+            exclude: ["AQ"],
+          })
+        );
+
+        polygonSeries.mapPolygons.template.setAll({
+          fill: am5.color(0xdadada),
+        });
+
+        // Create point series for markers
+        // https://www.amcharts.com/docs/v5/charts/map-chart/map-point-series/
+        var pointSeries = chart.series.push(
+          am5map.ClusteredPointSeries.new(root, {})
+        );
+
+        // Set clustered bullet
+        // https://www.amcharts.com/docs/v5/charts/map-chart/clustered-point-series/#Group_bullet
+        pointSeries.set("clusteredBullet", function (root) {
+          var container = am5.Container.new(root, {
+            cursorOverStyle: "pointer",
+          });
+
+          var circle1 = container.children.push(
+            am5.Circle.new(root, {
+              radius: 8,
+              tooltipY: 0,
+              fill: am5.color(0xff8c00),
+            })
+          );
+
+          var circle2 = container.children.push(
+            am5.Circle.new(root, {
+              radius: 12,
+              fillOpacity: 0.3,
+              tooltipY: 0,
+              fill: am5.color(0xff8c00),
+            })
+          );
+
+          var circle3 = container.children.push(
+            am5.Circle.new(root, {
+              radius: 16,
+              fillOpacity: 0.3,
+              tooltipY: 0,
+              fill: am5.color(0xff8c00),
+            })
+          );
+
+          var label = container.children.push(
+            am5.Label.new(root, {
+              centerX: am5.p50,
+              centerY: am5.p50,
+              fill: am5.color(0xffffff),
+              populateText: true,
+              fontSize: "8",
+              text: "{value}",
+            })
+          );
+
+          container.events.on("click", function (e) {
+            pointSeries.zoomToCluster(e.target.dataItem);
+          });
+
+          return am5.Bullet.new(root, {
+            sprite: container,
+          });
+        });
+
+        // Create regular bullets
+        pointSeries.bullets.push(function () {
+          var circle = am5.Circle.new(root, {
+            radius: 6,
+            tooltipY: 0,
+            fill: am5.color(0xff8c00),
+            tooltipText: "{title}",
+          });
+
+          return am5.Bullet.new(root, {
+            sprite: circle,
+          });
+        });
+
+        // Set data
+        var cities = [
+          { title: "Vienna", latitude: 48.2092, longitude: 16.3728 },
+          { title: "Minsk", latitude: 53.9678, longitude: 27.5766 },
+          { title: "Brussels", latitude: 50.8371, longitude: 4.3676 },
+          { title: "Sarajevo", latitude: 43.8608, longitude: 18.4214 },
+          { title: "Sofia", latitude: 42.7105, longitude: 23.3238 },
+          { title: "Zagreb", latitude: 45.815, longitude: 15.9785 },
+          { title: "Pristina", latitude: 42.666667, longitude: 21.166667 },
+          { title: "Prague", latitude: 50.0878, longitude: 14.4205 },
+          { title: "Copenhagen", latitude: 55.6763, longitude: 12.5681 },
+          { title: "Tallinn", latitude: 59.4389, longitude: 24.7545 },
+          { title: "Helsinki", latitude: 60.1699, longitude: 24.9384 },
+          { title: "Paris", latitude: 48.8567, longitude: 2.351 },
+          { title: "Berlin", latitude: 52.5235, longitude: 13.4115 },
+          { title: "Athens", latitude: 37.9792, longitude: 23.7166 },
+          { title: "Budapest", latitude: 47.4984, longitude: 19.0408 },
+          { title: "Reykjavik", latitude: 64.1353, longitude: -21.8952 },
+          { title: "Dublin", latitude: 53.3441, longitude: -6.2675 },
+          { title: "Rome", latitude: 41.8955, longitude: 12.4823 },
+          { title: "Riga", latitude: 56.9465, longitude: 24.1049 },
+          { title: "Vaduz", latitude: 47.1411, longitude: 9.5215 },
+          { title: "Vilnius", latitude: 54.6896, longitude: 25.2799 },
+          { title: "Luxembourg", latitude: 49.61, longitude: 6.1296 },
+          { title: "Skopje", latitude: 42.0024, longitude: 21.4361 },
+          { title: "Valletta", latitude: 35.9042, longitude: 14.5189 },
+          { title: "Chisinau", latitude: 47.0167, longitude: 28.8497 },
+          { title: "Monaco", latitude: 43.7325, longitude: 7.4189 },
+          { title: "Podgorica", latitude: 42.4602, longitude: 19.2595 },
+          { title: "Amsterdam", latitude: 52.3738, longitude: 4.891 },
+          { title: "Oslo", latitude: 59.9138, longitude: 10.7387 },
+          { title: "Warsaw", latitude: 52.2297, longitude: 21.0122 },
+          { title: "Lisbon", latitude: 38.7072, longitude: -9.1355 },
+          { title: "Bucharest", latitude: 44.4479, longitude: 26.0979 },
+          { title: "Moscow", latitude: 55.7558, longitude: 37.6176 },
+          { title: "San Marino", latitude: 43.9424, longitude: 12.4578 },
+          { title: "Belgrade", latitude: 44.8048, longitude: 20.4781 },
+          { title: "Bratislava", latitude: 48.2116, longitude: 17.1547 },
+          { title: "Ljubljana", latitude: 46.0514, longitude: 14.506 },
+          { title: "Madrid", latitude: 40.4167, longitude: -3.7033 },
+          { title: "Stockholm", latitude: 59.3328, longitude: 18.0645 },
+          { title: "Bern", latitude: 46.948, longitude: 7.4481 },
+          { title: "Kiev", latitude: 50.4422, longitude: 30.5367 },
+          { title: "London", latitude: 51.5002, longitude: -0.1262 },
+          { title: "Gibraltar", latitude: 36.1377, longitude: -5.3453 },
+          { title: "Saint Peter Port", latitude: 49.466, longitude: -2.5522 },
+          { title: "Douglas", latitude: 54.167, longitude: -4.4821 },
+          { title: "Saint Helier", latitude: 49.1919, longitude: -2.1071 },
+          { title: "Longyearbyen", latitude: 78.2186, longitude: 15.6488 },
+          { title: "Kabul", latitude: 34.5155, longitude: 69.1952 },
+          { title: "Yerevan", latitude: 40.1596, longitude: 44.509 },
+          { title: "Baku", latitude: 40.3834, longitude: 49.8932 },
+          { title: "Manama", latitude: 26.1921, longitude: 50.5354 },
+          { title: "Dhaka", latitude: 23.7106, longitude: 90.3978 },
+          { title: "Thimphu", latitude: 27.4405, longitude: 89.673 },
+          {
+            title: "Bandar Seri Begawan",
+            latitude: 4.9431,
+            longitude: 114.9425,
+          },
+          { title: "Phnom Penh", latitude: 11.5434, longitude: 104.8984 },
+          { title: "Peking", latitude: 39.9056, longitude: 116.3958 },
+          { title: "Nicosia", latitude: 35.1676, longitude: 33.3736 },
+          { title: "T'bilisi", latitude: 41.701, longitude: 44.793 },
+          { title: "New Delhi", latitude: 28.6353, longitude: 77.225 },
+          { title: "Jakarta", latitude: -6.1862, longitude: 106.8063 },
+          { title: "Teheran", latitude: 35.7061, longitude: 51.4358 },
+          { title: "Baghdad", latitude: 33.3157, longitude: 44.3922 },
+          { title: "Jerusalem", latitude: 31.76, longitude: 35.17 },
+          { title: "Tokyo", latitude: 35.6785, longitude: 139.6823 },
+          { title: "Amman", latitude: 31.9394, longitude: 35.9349 },
+          { title: "Astana", latitude: 51.1796, longitude: 71.4475 },
+          { title: "Kuwait", latitude: 29.3721, longitude: 47.9824 },
+          { title: "Bishkek", latitude: 42.8679, longitude: 74.5984 },
+          { title: "Vientiane", latitude: 17.9689, longitude: 102.6137 },
+          { title: "Beyrouth / Beirut", latitude: 33.8872, longitude: 35.5134 },
+          { title: "Kuala Lumpur", latitude: 3.1502, longitude: 101.7077 },
+          { title: "Ulan Bator", latitude: 47.9138, longitude: 106.922 },
+          { title: "Pyinmana", latitude: 19.7378, longitude: 96.2083 },
+          { title: "Kathmandu", latitude: 27.7058, longitude: 85.3157 },
+          { title: "Muscat", latitude: 23.6086, longitude: 58.5922 },
+          { title: "Islamabad", latitude: 33.6751, longitude: 73.0946 },
+          { title: "Manila", latitude: 14.579, longitude: 120.9726 },
+          { title: "Doha", latitude: 25.2948, longitude: 51.5082 },
+          { title: "Riyadh", latitude: 24.6748, longitude: 46.6977 },
+          { title: "Singapore", latitude: 1.2894, longitude: 103.85 },
+          { title: "Seoul", latitude: 37.5139, longitude: 126.9828 },
+          { title: "Colombo", latitude: 6.9155, longitude: 79.8572 },
+          { title: "Damascus", latitude: 33.5158, longitude: 36.2939 },
+          { title: "Taipei", latitude: 25.0338, longitude: 121.5645 },
+          { title: "Dushanbe", latitude: 38.5737, longitude: 68.7738 },
+          { title: "Bangkok", latitude: 13.7573, longitude: 100.502 },
+          { title: "Dili", latitude: -8.5662, longitude: 125.588 },
+          { title: "Ankara", latitude: 39.9439, longitude: 32.856 },
+          { title: "Ashgabat", latitude: 37.9509, longitude: 58.3794 },
+          { title: "Abu Dhabi", latitude: 24.4764, longitude: 54.3705 },
+          { title: "Tashkent", latitude: 41.3193, longitude: 69.2481 },
+          { title: "Hanoi", latitude: 21.0341, longitude: 105.8372 },
+          { title: "Sanaa", latitude: 15.3556, longitude: 44.2081 },
+          { title: "Buenos Aires", latitude: -34.6118, longitude: -58.4173 },
+          { title: "Bridgetown", latitude: 13.0935, longitude: -59.6105 },
+          { title: "Belmopan", latitude: 17.2534, longitude: -88.7713 },
+          { title: "Sucre", latitude: -19.0421, longitude: -65.2559 },
+          { title: "Brasilia", latitude: -15.7801, longitude: -47.9292 },
+          { title: "Ottawa", latitude: 45.4235, longitude: -75.6979 },
+          { title: "Santiago", latitude: -33.4691, longitude: -70.642 },
+          { title: "Bogota", latitude: 4.6473, longitude: -74.0962 },
+          { title: "San Jose", latitude: 9.9402, longitude: -84.1002 },
+          { title: "Havana", latitude: 23.1333, longitude: -82.3667 },
+          { title: "Roseau", latitude: 15.2976, longitude: -61.39 },
+          { title: "Santo Domingo", latitude: 18.479, longitude: -69.8908 },
+          { title: "Quito", latitude: -0.2295, longitude: -78.5243 },
+          { title: "San Salvador", latitude: 13.7034, longitude: -89.2073 },
+          { title: "Guatemala", latitude: 14.6248, longitude: -90.5328 },
+          { title: "Ciudad de Mexico", latitude: 19.4271, longitude: -99.1276 },
+          { title: "Managua", latitude: 12.1475, longitude: -86.2734 },
+          { title: "Panama", latitude: 8.9943, longitude: -79.5188 },
+          { title: "Asuncion", latitude: -25.3005, longitude: -57.6362 },
+          { title: "Lima", latitude: -12.0931, longitude: -77.0465 },
+          { title: "Castries", latitude: 13.9972, longitude: -60.0018 },
+          { title: "Paramaribo", latitude: 5.8232, longitude: -55.1679 },
+          { title: "Washington D.C.", latitude: 38.8921, longitude: -77.0241 },
+          { title: "Montevideo", latitude: -34.8941, longitude: -56.0675 },
+          { title: "Caracas", latitude: 10.4961, longitude: -66.8983 },
+          { title: "Oranjestad", latitude: 12.5246, longitude: -70.0265 },
+          { title: "Cayenne", latitude: 4.9346, longitude: -52.3303 },
+          { title: "Plymouth", latitude: 16.6802, longitude: -62.2014 },
+          { title: "San Juan", latitude: 18.45, longitude: -66.0667 },
+          { title: "Algiers", latitude: 36.7755, longitude: 3.0597 },
+          { title: "Luanda", latitude: -8.8159, longitude: 13.2306 },
+          { title: "Porto-Novo", latitude: 6.4779, longitude: 2.6323 },
+          { title: "Gaborone", latitude: -24.657, longitude: 25.9089 },
+          { title: "Ouagadougou", latitude: 12.3569, longitude: -1.5352 },
+          { title: "Bujumbura", latitude: -3.3818, longitude: 29.3622 },
+          { title: "Yaounde", latitude: 3.8612, longitude: 11.5217 },
+          { title: "Bangui", latitude: 4.3621, longitude: 18.5873 },
+          { title: "Brazzaville", latitude: -4.2767, longitude: 15.2662 },
+          { title: "Kinshasa", latitude: -4.3369, longitude: 15.3271 },
+          { title: "Yamoussoukro", latitude: 6.8067, longitude: -5.2728 },
+          { title: "Djibouti", latitude: 11.5806, longitude: 43.1425 },
+          { title: "Cairo", latitude: 30.0571, longitude: 31.2272 },
+          { title: "Asmara", latitude: 15.3315, longitude: 38.9183 },
+          { title: "Addis Abeba", latitude: 9.0084, longitude: 38.7575 },
+          { title: "Libreville", latitude: 0.3858, longitude: 9.4496 },
+          { title: "Banjul", latitude: 13.4399, longitude: -16.6775 },
+          { title: "Accra", latitude: 5.5401, longitude: -0.2074 },
+          { title: "Conakry", latitude: 9.537, longitude: -13.6785 },
+          { title: "Bissau", latitude: 11.8598, longitude: -15.5875 },
+          { title: "Nairobi", latitude: -1.2762, longitude: 36.7965 },
+          { title: "Maseru", latitude: -29.2976, longitude: 27.4854 },
+          { title: "Monrovia", latitude: 6.3106, longitude: -10.8047 },
+          { title: "Tripoli", latitude: 32.883, longitude: 13.1897 },
+          { title: "Antananarivo", latitude: -18.9201, longitude: 47.5237 },
+          { title: "Lilongwe", latitude: -13.9899, longitude: 33.7703 },
+          { title: "Bamako", latitude: 12.653, longitude: -7.9864 },
+          { title: "Nouakchott", latitude: 18.0669, longitude: -15.99 },
+          { title: "Port Louis", latitude: -20.1654, longitude: 57.4896 },
+          { title: "Rabat", latitude: 33.9905, longitude: -6.8704 },
+          { title: "Maputo", latitude: -25.9686, longitude: 32.5804 },
+          { title: "Windhoek", latitude: -22.5749, longitude: 17.0805 },
+          { title: "Niamey", latitude: 13.5164, longitude: 2.1157 },
+          { title: "Abuja", latitude: 9.058, longitude: 7.4891 },
+          { title: "Kigali", latitude: -1.9441, longitude: 30.0619 },
+          { title: "Dakar", latitude: 14.6953, longitude: -17.4439 },
+          { title: "Freetown", latitude: 8.4697, longitude: -13.2659 },
+          { title: "Mogadishu", latitude: 2.0411, longitude: 45.3426 },
+          { title: "Pretoria", latitude: -25.7463, longitude: 28.1876 },
+          { title: "Mbabane", latitude: -26.3186, longitude: 31.141 },
+          { title: "Dodoma", latitude: -6.167, longitude: 35.7497 },
+          { title: "Lome", latitude: 6.1228, longitude: 1.2255 },
+          { title: "Tunis", latitude: 36.8117, longitude: 10.1761 },
+        ];
+
+        for (var i = 0; i < cities.length; i++) {
+          var city = cities[i];
+          addCity(city.longitude, city.latitude, city.title);
+        }
+
+        function addCity(longitude, latitude, title) {
+          pointSeries.data.push({
+            geometry: { type: "Point", coordinates: [longitude, latitude] },
+            title: title,
+          });
+        }
+
+        // Make stuff animate on load
+        chart.appear(1000, 100);
+      }); // end am5.ready()
+    </script>
+
+    <script>
+      am5.ready(function () {
+        // Create root element
+        // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+        var root = am5.Root.new("md3");
+
+        // Set themes
+        // https://www.amcharts.com/docs/v5/concepts/themes/
+        root.setThemes([am5themes_Animated.new(root)]);
+
+        // Create the map chart
+        // https://www.amcharts.com/docs/v5/charts/map-chart/
+        var chart = root.container.children.push(
+          am5map.MapChart.new(root, {
+            panX: "rotateX",
+            panY: "rotateY",
+            projection: am5map.geoMercator(),
+          })
+        );
+
+        // Create series for background fill
+        // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/#Background_polygon
+        var backgroundSeries = chart.series.push(
+          am5map.MapPolygonSeries.new(root, {})
+        );
+        backgroundSeries.mapPolygons.template.setAll({
+          fill: root.interfaceColors.get("alternativeBackground"),
+          fillOpacity: 0,
+          strokeOpacity: 0,
+        });
+
+        // Add background polygon
+        // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/#Background_polygon
+        backgroundSeries.data.push({
+          geometry: am5map.getGeoRectangle(90, 180, -90, -180),
+        });
+
+        // Create main polygon series for countries
+        // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/
+        var polygonSeries = chart.series.push(
+          am5map.MapPolygonSeries.new(root, {
+            geoJSON: am5geodata_worldLow,
+          })
+        );
+
+        // Create point series for Sun icon
+        // https://www.amcharts.com/docs/v5/charts/map-chart/map-point-series/
+        var sunSeries = chart.series.push(am5map.MapPointSeries.new(root, {}));
+
+        sunSeries.bullets.push(function () {
+          var circle = am5.Circle.new(root, {
+            radius: 18,
+            fill: am5.color(0xffba00),
+            filter: "blur(5px)",
+          });
+
+          circle.animate({
+            key: "radius",
+            duration: 2000,
+            to: 23,
+            loops: Infinity,
+            easing: am5.ease.yoyo(am5.ease.linear),
+          });
+
+          return am5.Bullet.new(root, {
+            sprite: circle,
+          });
+        });
+
+        sunSeries.bullets.push(function () {
+          return am5.Bullet.new(root, {
+            sprite: am5.Circle.new(root, {
+              radius: 14,
+              fill: am5.color(0xffba00),
+            }),
+          });
+        });
+
+        var sunDataItem = sunSeries.pushDataItem({});
+
+        // Create polygon series for night-time polygons
+        // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/
+        var nightSeries = chart.series.push(
+          am5map.MapPolygonSeries.new(root, {})
+        );
+
+        nightSeries.mapPolygons.template.setAll({
+          fill: am5.color(0x000000),
+          fillOpacity: 0.25,
+          strokeOpacity: 0,
+        });
+
+        var nightDataItem0 = nightSeries.pushDataItem({});
+        var nightDataItem1 = nightSeries.pushDataItem({});
+        var nightDataItem2 = nightSeries.pushDataItem({});
+
+        // Create controls
+        var container = chart.children.push(
+          am5.Container.new(root, {
+            y: am5.percent(95),
+            centerX: am5.p50,
+            x: am5.p50,
+            width: am5.percent(80),
+            layout: root.horizontalLayout,
+          })
+        );
+
+        var playButton = container.children.push(
+          am5.Button.new(root, {
+            themeTags: ["play"],
+            centerY: am5.p50,
+            marginRight: 15,
+            icon: am5.Graphics.new(root, {
+              themeTags: ["icon"],
+            }),
+          })
+        );
+
+        playButton.events.on("click", function () {
+          if (playButton.get("active")) {
+            slider.set("start", slider.get("start") + 0.0001);
+          } else {
+            slider.animate({
+              key: "start",
+              to: 1,
+              duration: 15000 * (1 - slider.get("start")),
+            });
+          }
+        });
+
+        var slider = container.children.push(
+          am5.Slider.new(root, {
+            orientation: "horizontal",
+            start: 0.5,
+            centerY: am5.p50,
+          })
+        );
+
+        slider.on("start", function (start) {
+          if (start === 1) {
+            playButton.set("active", false);
+          }
+        });
+
+        slider.events.on("rangechanged", function () {
+          updateDateNight(
+            (slider.get("start", 0) - 0.5) * am5.time.getDuration("day", 2) +
+              new Date().getTime()
+          );
+        });
+
+        var cont = chart.children.push(
+          am5.Container.new(root, {
+            layout: root.horizontalLayout,
+            x: 20,
+            y: 40,
+          })
+        );
+
+        cont.children.push(
+          am5.Label.new(root, {
+            centerY: am5.p50,
+            text: "Map",
+          })
+        );
+
+        var switchButton = cont.children.push(
+          am5.Button.new(root, {
+            themeTags: ["switch"],
+            centerY: am5.p50,
+            icon: am5.Circle.new(root, {
+              themeTags: ["icon"],
+            }),
+          })
+        );
+
+        switchButton.on("active", function () {
+          if (!switchButton.get("active")) {
+            chart.set("projection", am5map.geoMercator());
+            chart.set("panY", "translateY");
+            chart.set("panX", "translateX");
+            backgroundSeries.mapPolygons.template.set("fillOpacity", 0);
+          } else {
+            chart.set("projection", am5map.geoOrthographic());
+            chart.set("panY", "rotateY");
+            chart.set("panX", "rotateX");
+            backgroundSeries.mapPolygons.template.set("fillOpacity", 0.1);
+          }
+        });
+        cont.children.push(
+          am5.Label.new(root, {
+            centerY: am5.p50,
+            text: "Globe",
+          })
+        );
+
+        chart.appear(1000, 100);
+
+        function updateDateNight(time) {
+          var sunPosition = solarPosition(time);
+          sunDataItem.set("longitude", sunPosition.longitude);
+          sunDataItem.set("latitude", sunPosition.latitude);
+
+          var nightPosition = {
+            longitude: sunPosition.longitude + 180,
+            latitude: -sunPosition.latitude,
+          };
+
+          nightDataItem0.set(
+            "geometry",
+            am5map.getGeoCircle(nightPosition, 92)
+          );
+          nightDataItem1.set(
+            "geometry",
+            am5map.getGeoCircle(nightPosition, 90)
+          );
+          nightDataItem2.set(
+            "geometry",
+            am5map.getGeoCircle(nightPosition, 88)
+          );
+        }
+
+        var offset = new Date().getTimezoneOffset() * 60 * 1000;
+        //updateDateNight(new Date().getTime());
+
+        // all sun position calculation is taken from: http://bl.ocks.org/mbostock/4597134
+        function solarPosition(time) {
+          var centuries = (time - Date.UTC(2000, 0, 1, 12)) / 864e5 / 36525; // since J2000
+          var longitude =
+            ((am5.time.round(new Date(time), "day", 1).getTime() -
+              time -
+              offset) /
+              864e5) *
+              360 -
+            180;
+
+          return am5map.normalizeGeoPoint({
+            longitude: longitude - equationOfTime(centuries) * am5.math.DEGREES,
+            latitude: solarDeclination(centuries) * am5.math.DEGREES,
+          });
+        }
+
+        // Equations based on NOAA’s Solar Calculator; all angles in RADIANS.
+        // http://www.esrl.noaa.gov/gmd/grad/solcalc/
+
+        function equationOfTime(centuries) {
+          var e = eccentricityEarthOrbit(centuries),
+            m = solarGeometricMeanAnomaly(centuries),
+            l = solarGeometricMeanLongitude(centuries),
+            y = Math.tan(obliquityCorrection(centuries) / 2);
+
+          y *= y;
+          return (
+            y * Math.sin(2 * l) -
+            2 * e * Math.sin(m) +
+            4 * e * y * Math.sin(m) * Math.cos(2 * l) -
+            0.5 * y * y * Math.sin(4 * l) -
+            1.25 * e * e * Math.sin(2 * m)
+          );
+        }
+
+        function solarDeclination(centuries) {
+          return Math.asin(
+            Math.sin(obliquityCorrection(centuries)) *
+              Math.sin(solarApparentLongitude(centuries))
+          );
+        }
+
+        function solarApparentLongitude(centuries) {
+          return (
+            solarTrueLongitude(centuries) -
+            (0.00569 +
+              0.00478 *
+                Math.sin((125.04 - 1934.136 * centuries) * am5.math.RADIANS)) *
+              am5.math.RADIANS
+          );
+        }
+
+        function solarTrueLongitude(centuries) {
+          return (
+            solarGeometricMeanLongitude(centuries) +
+            solarEquationOfCenter(centuries)
+          );
+        }
+
+        function solarGeometricMeanAnomaly(centuries) {
+          return (
+            (357.52911 + centuries * (35999.05029 - 0.0001537 * centuries)) *
+            am5.math.RADIANS
+          );
+        }
+
+        function solarGeometricMeanLongitude(centuries) {
+          var l =
+            (280.46646 + centuries * (36000.76983 + centuries * 0.0003032)) %
+            360;
+          return ((l < 0 ? l + 360 : l) / 180) * Math.PI;
+        }
+
+        function solarEquationOfCenter(centuries) {
+          var m = solarGeometricMeanAnomaly(centuries);
+          return (
+            (Math.sin(m) *
+              (1.914602 - centuries * (0.004817 + 0.000014 * centuries)) +
+              Math.sin(m + m) * (0.019993 - 0.000101 * centuries) +
+              Math.sin(m + m + m) * 0.000289) *
+            am5.math.RADIANS
+          );
+        }
+
+        function obliquityCorrection(centuries) {
+          return (
+            meanObliquityOfEcliptic(centuries) +
+            0.00256 *
+              Math.cos((125.04 - 1934.136 * centuries) * am5.math.RADIANS) *
+              am5.math.RADIANS
+          );
+        }
+
+        function meanObliquityOfEcliptic(centuries) {
+          return (
+            (23 +
+              (26 +
+                (21.448 -
+                  centuries *
+                    (46.815 + centuries * (0.00059 - centuries * 0.001813))) /
+                  60) /
+                60) *
+            am5.math.RADIANS
+          );
+        }
+
+        function eccentricityEarthOrbit(centuries) {
+          return (
+            0.016708634 - centuries * (0.000042037 + 0.0000001267 * centuries)
+          );
+        }
+      }); // end am5.ready()
+    </script>
+
+    <script>
+      am5.ready(function () {
+        // =================================
+        // Create map chart
+        // =================================
+
+        // Create root and chart
+        var root = am5.Root.new("chartdiv");
+
+        // Set themes
+        root.setThemes([am5themes_Animated.new(root)]);
+
+        var chart = root.container.children.push(
+          am5map.MapChart.new(root, {
+            panX: "rotateX",
+            projection: am5map.geoAlbersUsa(),
+          })
+        );
+
+        // Create polygon series
+        var polygonSeries = chart.series.push(
+          am5map.MapPolygonSeries.new(root, {
+            geoJSON: am5geodata_usaLow,
+          })
+        );
+
+        polygonSeries.mapPolygons.template.setAll({
+          tooltipText: "{name}",
+        });
+
+        polygonSeries.mapPolygons.template.states.create("hover", {
+          fill: am5.color(0x297373),
+        });
+
+        var zoomOut = root.tooltipContainer.children.push(
+          am5.Button.new(root, {
+            x: am5.p100,
+            y: 0,
+            centerX: am5.p100,
+            centerY: 0,
+            paddingTop: 18,
+            paddingBottom: 18,
+            paddingLeft: 12,
+            paddingRight: 12,
+            dx: -20,
+            dy: 20,
+            themeTags: ["zoom"],
+            icon: am5.Graphics.new(root, {
+              themeTags: ["button", "icon"],
+              strokeOpacity: 0.7,
+              draw: function (display) {
+                display.moveTo(0, 0);
+                display.lineTo(12, 0);
+              },
+            }),
+          })
+        );
+
+        zoomOut.get("background").setAll({
+          cornerRadiusBL: 40,
+          cornerRadiusBR: 40,
+          cornerRadiusTL: 40,
+          cornerRadiusTR: 40,
+        });
+        zoomOut.events.on("click", function () {
+          if (currentSeries) {
+            currentSeries.hide();
+          }
+          chart.goHome();
+          zoomOut.hide();
+          currentSeries = regionalSeries.US.series;
+          currentSeries.show();
+        });
+        zoomOut.hide();
+
+        // =================================
+        // Set up point series
+        // =================================
+
+        // Load store data
+        am5.net
+          .load(
+            "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/TargetStores.json"
+          )
+          .then(function (result) {
+            var stores = am5.JSONParser.parse(result.response);
+            setupStores(stores);
+          });
+
+        var regionalSeries = {};
+        var currentSeries;
+
+        // Parses data and creats map point series for domestic and state-level
+        function setupStores(data) {
+          console.log(data);
+
+          // Init country-level series
+          regionalSeries.US = {
+            markerData: [],
+            series: createSeries("stores"),
+          };
+
+          // Set current series
+          currentSeries = regionalSeries.US.series;
+
+          // Process data
+          am5.array.each(data.query_results, function (store) {
+            // Get store data
+            var store = {
+              state: store.MAIL_ST_PROV_C,
+              long: am5.type.toNumber(store.LNGTD_I),
+              lat: am5.type.toNumber(store.LATTD_I),
+              location: store.co_loc_n,
+              city: store.mail_city_n,
+              count: am5.type.toNumber(store.count),
+            };
+
+            // Process state-level data
+            if (regionalSeries[store.state] == undefined) {
+              var statePolygon = getPolygon("US-" + store.state);
+              if (statePolygon) {
+                var centroid = statePolygon.visualCentroid();
+
+                // Add state data
+                regionalSeries[store.state] = {
+                  target: store.state,
+                  type: "state",
+                  name: statePolygon.dataItem.dataContext.name,
+                  count: store.count,
+                  stores: 1,
+                  state: store.state,
+                  markerData: [],
+                  geometry: {
+                    type: "Point",
+                    coordinates: [centroid.longitude, centroid.latitude],
+                  },
+                };
+                regionalSeries.US.markerData.push(regionalSeries[store.state]);
+              } else {
+                // State not found
+                return;
+              }
+            } else {
+              regionalSeries[store.state].stores++;
+              regionalSeries[store.state].count += store.count;
+            }
+
+            // Process city-level data
+            if (regionalSeries[store.city] == undefined) {
+              regionalSeries[store.city] = {
+                target: store.city,
+                type: "city",
+                name: store.city,
+                count: store.count,
+                stores: 1,
+                state: store.state,
+                markerData: [],
+                geometry: {
+                  type: "Point",
+                  coordinates: [store.long, store.lat],
+                },
+              };
+              regionalSeries[store.state].markerData.push(
+                regionalSeries[store.city]
+              );
+            } else {
+              regionalSeries[store.city].stores++;
+              regionalSeries[store.city].count += store.count;
+            }
+
+            // Process individual store
+            regionalSeries[store.city].markerData.push({
+              name: store.location,
+              count: store.count,
+              stores: 1,
+              state: store.state,
+              geometry: {
+                type: "Point",
+                coordinates: [store.long, store.lat],
+              },
+            });
+          });
+          console.log(regionalSeries.US.markerData);
+          regionalSeries.US.series.data.setAll(regionalSeries.US.markerData);
+        }
+
+        // Finds polygon in series by its id
+        function getPolygon(id) {
+          var found;
+          polygonSeries.mapPolygons.each(function (polygon) {
+            if (polygon.dataItem.get("id") == id) {
+              found = polygon;
+            }
+          });
+          return found;
+        }
+
+        // Creates series with heat rules
+        function createSeries(heatfield) {
+          // Create point series
+          var pointSeries = chart.series.push(
+            am5map.MapPointSeries.new(root, {
+              valueField: heatfield,
+              calculateAggregates: true,
+            })
+          );
+
+          // Add store bullet
+          var circleTemplate = am5.Template.new(root);
+          pointSeries.bullets.push(function () {
+            var container = am5.Container.new(root, {});
+
+            var circle = container.children.push(
+              am5.Circle.new(
+                root,
+                {
+                  radius: 10,
+                  fill: am5.color(0x000000),
+                  fillOpacity: 0.7,
+                  cursorOverStyle: "pointer",
+                  tooltipText: "{name}:\n[bold]{stores} stores[/]",
+                },
+                circleTemplate
+              )
+            );
+
+            var label = container.children.push(
+              am5.Label.new(root, {
+                text: "{stores}",
+                fill: am5.color(0xffffff),
+                populateText: true,
+                centerX: am5.p50,
+                centerY: am5.p50,
+                textAlign: "center",
+              })
+            );
+
+            // Set up drill-down
+            circle.events.on("click", function (ev) {
+              // Determine what we've clicked on
+              var data = ev.target.dataItem.dataContext;
+
+              // No id? Individual store - nothing to drill down to further
+              if (!data.target) {
+                return;
+              }
+
+              // Create actual series if it hasn't been yet created
+              if (!regionalSeries[data.target].series) {
+                regionalSeries[data.target].series = createSeries("count");
+                regionalSeries[data.target].series.data.setAll(data.markerData);
+              }
+
+              // Hide current series
+              if (currentSeries) {
+                currentSeries.hide();
+              }
+
+              // Control zoom
+              if (data.type == "state") {
+                var statePolygon = getPolygon("US-" + data.state);
+                polygonSeries.zoomToDataItem(statePolygon.dataItem);
+              } else if (data.type == "city") {
+                chart.zoomToGeoPoint(
+                  {
+                    latitude: data.geometry.coordinates[1],
+                    longitude: data.geometry.coordinates[0],
+                  },
+                  64,
+                  true
+                );
+              }
+              zoomOut.show();
+
+              // Show new targert series
+              currentSeries = regionalSeries[data.target].series;
+              currentSeries.show();
+            });
+
+            return am5.Bullet.new(root, {
+              sprite: container,
+            });
+          });
+
+          // Add heat rule for circles
+          pointSeries.set("heatRules", [
+            {
+              target: circleTemplate,
+              dataField: "value",
+              min: 10,
+              max: 30,
+              key: "radius",
+            },
+          ]);
+
+          // Set up drill-down
+          // TODO
+
+          return pointSeries;
+        }
+      }); // end am5.ready()
+    </script>
+
+    <script>
+      am5.ready(function () {
+        // Create root and chart
+        var root = am5.Root.new("chartdiv");
+
+        // Set themes
+        root.setThemes([am5themes_Animated.new(root)]);
+
+        // ====================================
+        // Create map
+        // ====================================
+
+        var map = root.container.children.push(
+          am5map.MapChart.new(root, {
+            panX: "none",
+            projection: am5map.geoNaturalEarth1(),
+          })
+        );
+
+        // Create polygon series
+        var polygonSeries = map.series.push(
+          am5map.MapPolygonSeries.new(root, {
+            geoJSON: am5geodata_continentsLow,
+            exclude: ["antarctica"],
+            fill: am5.color(0xbbbbbb),
+          })
+        );
+
+        var pointSeries = map.series.push(
+          am5map.MapPointSeries.new(root, {
+            // ...
+          })
+        );
+
+        pointSeries.bullets.push(function (root, series, x) {
+          var chartData = x.dataContext.data;
+
+          var chart = root.container.children.push(
+            am5percent.PieChart.new(root, {
+              width: chartData.width,
+              height: chartData.height,
+              radius: am5.p100,
+              centerX: am5.p50,
+              centerY: am5.p50,
+            })
+          );
+
+          var series = chart.series.push(
+            am5percent.PieSeries.new(root, {
+              valueField: "value",
+              categoryField: "category",
+            })
+          );
+
+          series.labels.template.set("forceHidden", true);
+          series.ticks.template.set("forceHidden", true);
+          series.data.setAll(chartData.pieData);
+
+          return am5.Bullet.new(root, {
+            sprite: chart,
+          });
+        });
+
+        pointSeries.bullets.push(function (root, series, x) {
+          var chartData = x.dataContext.data;
+
+          return am5.Bullet.new(root, {
+            sprite: am5.Label.new(root, {
+              text: chartData.title,
+              centerX: am5.p50,
+              centerY: am5.p100,
+              dy: chartData.height * -0.5,
+            }),
+          });
+        });
+
+        // ====================================
+        // Create pie charts
+        // ====================================
+
+        var charts = [
+          {
+            title: "North America",
+            latitude: 39.563353,
+            longitude: -99.316406,
+            width: 100,
+            height: 100,
+            pieData: [
+              {
+                category: "Category #1",
+                value: 1200,
+              },
+              {
+                category: "Category #2",
+                value: 500,
+              },
+              {
+                category: "Category #3",
+                value: 765,
+              },
+              {
+                category: "Category #4",
+                value: 260,
+              },
+            ],
+          },
+          {
+            title: "Europe",
+            latitude: 50.896104,
+            longitude: 19.160156,
+            width: 50,
+            height: 50,
+            pieData: [
+              {
+                category: "Category #1",
+                value: 200,
+              },
+              {
+                category: "Category #2",
+                value: 600,
+              },
+              {
+                category: "Category #3",
+                value: 350,
+              },
+            ],
+          },
+          {
+            title: "Asia",
+            latitude: 47.212106,
+            longitude: 103.183594,
+            width: 80,
+            height: 80,
+            pieData: [
+              {
+                category: "Category #1",
+                value: 352,
+              },
+              {
+                category: "Category #2",
+                value: 266,
+              },
+              {
+                category: "Category #3",
+                value: 512,
+              },
+              {
+                category: "Category #4",
+                value: 199,
+              },
+            ],
+          },
+          {
+            title: "Africa",
+            latitude: 11.081385,
+            longitude: 21.621094,
+            width: 50,
+            height: 50,
+            pieData: [
+              {
+                category: "Category #1",
+                value: 200,
+              },
+              {
+                category: "Category #2",
+                value: 300,
+              },
+              {
+                category: "Category #3",
+                value: 599,
+              },
+              {
+                category: "Category #4",
+                value: 512,
+              },
+            ],
+          },
+        ];
+
+        for (var i = 0; i < charts.length; i++) {
+          var chart = charts[i];
+          pointSeries.data.push({
+            geometry: {
+              type: "Point",
+              coordinates: [chart.longitude, chart.latitude],
+            },
+            title: chart.title,
+            data: chart,
+          });
+        }
+      }); // end am5.ready()
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("cele-1");
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: "dayGridMonth",
+        });
+        calendar.render();
+      });
+    </script>
+
+    <script src="script1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </body>
+</html>
